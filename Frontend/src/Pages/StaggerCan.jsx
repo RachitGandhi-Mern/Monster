@@ -121,6 +121,3 @@ Stay sharp, go harder, and conquer limits with Monster Energy.</p>
 };
 
 export default StaggerCan;
-
-
-

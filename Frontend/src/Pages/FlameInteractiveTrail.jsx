@@ -51,11 +51,7 @@ const FlameInteractiveTrail = () => {
    
   ];
 
-  const textItems = [
-  ['Energy', 'Rush', 'Power', 'Fuel', 'Surge', 'Adrenaline', 'Ignite', 'Voltage', 'Burst', 'Charge', 'Unleashed', 'Overdrive', 'Amped', 'Pulse', 'Throttle'],
-  ['Extreme', 'Rebel', 'Untamed', 'Savage', 'NoLimits', 'Hardcore', 'Xtreme', 'Edge', 'Grind', 'Wired', 'Thrill', 'Burnout', 'Speed', 'Chaos', 'Breakout'],
-  ['Monster', 'Alpha', 'Instinct', 'Legacy', 'Victory', 'Raw', 'Dominate', 'Fearless', 'Champion', 'Crave', 'Fury', 'Uncaged', 'Strike', 'Force', 'Legend']
-];
+
 
   const rotatedItems = [
   'Shockwave',
@@ -333,30 +329,7 @@ const FlameInteractiveTrail = () => {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Text Columns - Hidden on mobile */}
-        <div className="absolute inset-0 flex justify-center items-center z-20 px-8 hidden md:block">
-          <div className="grid grid-cols-12 gap-4 w-full max-w-7xl">
-            {textItems.map((column, colIndex) => (
-              <div key={colIndex} className="col-span-4 flex flex-col gap-5">
-                {column.map((item, itemIndex) => (
-                  <span
-                    key={item}
-                    className={`
-                      font-bold text-lg tracking-tight transition-all duration-800 ease-out
-                      ${textVisible ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-5 blur-sm'}
-                    `}
-                    style={{
-                      color: `hsl(0, 0%, ${20 + itemIndex * 4}%)`,
-                      transitionDelay: `${colIndex * 200 + itemIndex * 100}ms`
-                    }}
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
+       
 
         {/* Rotated Text - Hidden on mobile */}
         <div className="absolute right-12 top-0 h-full flex flex-col justify-evenly items-center z-20 hidden md:flex">

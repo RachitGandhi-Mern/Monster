@@ -12,11 +12,11 @@ import HoverImages from './HoverImages';
 import LandingPage from './LandingPage';
 import FlameInteractiveTrail from './FlameInteractiveTrail';
 // import ShaderGallery from './Pages/ShaderGallery';
-// import SmoothScroll from './Components/SmoothScroll';
+import SmoothScroll from '../Components/SmoothScroll';
 
 
 const Home = () => (
-  <div>
+  <SmoothScroll>
     {/* <MainRoute /> */}
     <LandingPage/>
     {/* <Loading/> */}
@@ -29,7 +29,7 @@ const Home = () => (
     <HoverImages />
     <Footer />
     {/* <ShaderGallery/> */}
-  </div>
+  </SmoothScroll>
 );
 
 export default Home;

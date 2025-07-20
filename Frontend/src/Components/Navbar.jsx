@@ -83,7 +83,7 @@ const Navbar = () => {
       transition={{ duration: 0.25, ease: 'easeInOut' }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="fixed top-5 left-1/2 transform -translate-x-1/2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 overflow-hidden z-50 shadow-xl px-6 py-3 flex items-center justify-center gap-6 text-white"
+      className="fixed top-5 left-1/2 transform -translate-x-1/2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 overflow-hidden z-50 shadow-xl px-6 py-6 flex items-center justify-center gap-6 text-white"
     >
       <h1 className="text-xl font-bold tracking-widest font-[monster-energy] text-[#95D600]">MONSTER</h1>
       {isHovered && (
