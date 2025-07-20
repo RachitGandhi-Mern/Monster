@@ -127,9 +127,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import gsap from "gsap";
 import { motion } from "framer-motion";
-import HC1 from "../assets/images/HC1.png";
-import HC2 from "../assets/images/HC2.png";
-import HC3 from "../assets/images/HC3.png";
+import HC1 from "../assets/Images/HC1.png";
+import HC2 from "../assets/Images/HC2.png";
+import HC3 from "../assets/Images/HC3.png";
 import LiquidButton from "../Components/Ui/LiquidButton";
 
 const drinks = {
