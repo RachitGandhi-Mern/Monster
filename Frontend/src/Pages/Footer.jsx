@@ -71,6 +71,7 @@
 // export default Footer;
 
 import React, { useEffect, useRef, useState } from "react";
+import NewsletterForm from "../Components/NewsletterForm";
 
 const Footer = () => {
   const footerRef = useRef(null);
@@ -649,7 +650,7 @@ const Footer = () => {
             </div> */}
 
               {/* Newsletter Section */}
-              <div className="flex flex-col gap-4 max-w-sm">
+              {/* <div className="flex flex-col gap-4 max-w-sm">
                 <h2 className="text-lg font-semibold">Get up to 25% off</h2>
                 <p className="text-sm text-gray-300">
                   Subscribe to our newsletter
@@ -662,14 +663,16 @@ const Footer = () => {
                   />
                   <button
                     className="bg-[#FFF8F0] text-black px-4 py-2 uppercase text-sm 
-             hover:bg-[#95D600] hover:text-white transition-all 
-             active:scale-95 duration-150"
+                 hover:bg-[#95D600] hover:text-white transition-all 
+                   active:scale-95 duration-150"
                   >
                     Subscribe
                   </button>
                 </div>
-              </div>
+              </div> */}
+              <NewsletterForm/>
             </div>
+
 
             <div
               className={`text-center mb-12 ${

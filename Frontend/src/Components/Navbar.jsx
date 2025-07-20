@@ -75,7 +75,6 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
-
   return (
     <motion.div
       initial={{ width: '160px', height: '40px' }}
@@ -104,3 +103,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

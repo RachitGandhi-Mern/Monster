@@ -148,10 +148,10 @@ const About = () => {
       {/* Footer */}
       <div className="w-screen h-[50px] fixed bottom-0 z-[999999]">
         <div
-          className="text-[52px] text-[#f9cdad] hover:text-[#fe4365] cursor-pointer float-right mr-[8%] mt-[2.5px] w-[25px] h-[25px] text-center leading-[18px]"
+          className="text-xl text-[#f9cdad] hover:text-[#fe4365] cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px]"
           onClick={toggleEmail}
         >
-          @
+          @ Click Here
         </div>
       </div>
 
