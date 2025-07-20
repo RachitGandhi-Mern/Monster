@@ -3,11 +3,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // 🧃 Can images
-import Img1 from "../assets/images/Stager1.png";
-import Img2 from "../assets/images/Stager2.png";
-import Img3 from "../assets/images/Stager3.png";
-import Img4 from "../assets/images/Stager4.png";
-import Img5 from "../assets/images/Stager5.png";
+import Img1 from "../assets/Images/Stager1.png";
+import Img2 from "../assets/Images/Stager2.png";
+import Img3 from "../assets/Images/Stager3.png";
+import Img4 from "../assets/Images/Stager4.png";
+import Img5 from "../assets/Images/Stager5.png";
 
 
 
