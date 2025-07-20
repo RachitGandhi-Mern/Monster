@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import HC1 from "../assets/images/HC1.png";
-import HC2 from "../assets/images/HC2.png";
-import HC3 from "../assets/images/HC3.png";
-import HC4 from "../assets/images/HC4.png";
-import HC5 from "../assets/images/HC5.png";
-import HC6 from "../assets/images/HC6.png";
-import BG1 from "../assets/images/HoverCan1.png";
-import BG2 from "../assets/images/HoverCan2.png";
-import BG3 from "../assets/images/HoverCan3.png";
-import BG4 from "../assets/images/HoverCan3.png";
-import BG5 from "../assets/images/HoverCan3.png";
-import BG6 from "../assets/images/HoverCan3.png";
+import HC1 from "../assets/Images/HC1.png";
+import HC2 from "../assets/Images/HC2.png";
+import HC3 from "../assets/Images/HC3.png";
+import HC4 from "../assets/Images/HC4.png";
+import HC5 from "../assets/Images/HC5.png";
+import HC6 from "../assets/Images/HC6.png";
+import BG1 from "../assets/Images/HoverCan1.png";
+import BG2 from "../assets/Images/HoverCan2.png";
+import BG3 from "../assets/Images/HoverCan3.png";
+import BG4 from "../assets/Images/HoverCan3.png";
+import BG5 from "../assets/Images/HoverCan3.png";
+import BG6 from "../assets/Images/HoverCan3.png";
 
 const drinks = [
   {
