@@ -10,12 +10,12 @@ import HC3 from "../assets/Images/HC3.png";
 import HC4 from "../assets/Images/HC4.png";
 import HC5 from "../assets/Images/HC5.png";
 import HC6 from "../assets/Images/HC6.png";
-import BG1 from "../assets/Images/HoverCan1.png";
-import BG2 from "../assets/Images/HoverCan2.png";
+import BG1 from "../assets/Images/HoverCan2.png";
+import BG2 from "../assets/Images/HoverCan1.png";
 import BG3 from "../assets/Images/HoverCan3.png";
-import BG4 from "../assets/Images/HoverCan3.png";
-import BG5 from "../assets/Images/HoverCan3.png";
-import BG6 from "../assets/Images/HoverCan3.png";
+import BG4 from "../assets/Images/HoverCan4.png";
+import BG5 from "../assets/Images/HoverCan5.png";
+import BG6 from "../assets/Images/HoverCan6.png";
 
 const drinks = [
   {

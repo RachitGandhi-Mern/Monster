@@ -11,6 +11,7 @@ import MarqueeScrollComponent from '../Components/MarqueeScrollComponent';
 import HoverImages from './HoverImages';
 import Footer from './Footer';
 import SmoothScroll from '../Components/SmoothScroll';
+import QuoteSection from './QuoteSection';
 
 
 const Home = () => (
@@ -19,6 +20,7 @@ const Home = () => (
     {/* <Loading/> */}
     <LandingPage/>
     <OurDrinks/>
+    <QuoteSection/>
     <Hoverbar />
     <FlameInteractiveTrail/>
     <StaggerCan/>

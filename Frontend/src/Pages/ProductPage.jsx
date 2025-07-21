@@ -136,6 +136,9 @@ import { motion } from "framer-motion";
 import HC1 from "../assets/Images/HC1.png";
 import HC2 from "../assets/Images/HC2.png";
 import HC3 from "../assets/Images/HC3.png";
+import HC4 from "../assets/Images/HC4.png";
+import HC5 from "../assets/Images/HC5.png";
+import HC6 from "../assets/Images/HC6.png";
 import LiquidButton from "../Components/Ui/LiquidButton";
 
 const drinks = {
@@ -166,7 +169,7 @@ const drinks = {
   "classic-cola": {
     title: "Classic Cola",
     price: "£1.75",
-    img: HC1,
+    img: HC4,
     description: "Timeless cola taste with real sugar.",
     flavor: "Cola",
     volume: "500ml"
@@ -174,15 +177,15 @@ const drinks = {
   "berry-blast": {
     title: "Berry Blast",
     price: "£1.99",
-    img: HC2,
+    img: HC5,
     description: "Burst of berries in every sip!",
     flavor: "Mixed Berries",
     volume: "330ml"
   },
-  "lemon-zing": {
-    title: "Lemon Zing",
+  "White Haze": {
+    title: "White Haze",
     price: "£1.80",
-    img: HC3,
+    img: HC6,
     description: "Sharp lemon flavor with a sparkling twist.",
     flavor: "Lemon",
     volume: "330ml"

@@ -115,7 +115,7 @@ const About = () => {
   const animationRef = useRef(null);
   const currentX = useRef(-10);
   const direction = useRef(1);
-  const speed = 0.5;
+  const speed = 0.9;
 
   const toggleEmail = () => setIsVisible((prev) => !prev);
 
@@ -149,7 +149,7 @@ const About = () => {
 
       <svg
         viewBox="0 0 425 300"
-        className="absolute bottom-0 right-[-50px] h-[500px] rotate-[90deg] translate-x-[-170px]"
+        className="absolute bottom-0 top-0 right-[-50px] h-[750px] rotate-[90deg] translate-x-[-170px]"
       >
         <path
           id="curve"
@@ -164,7 +164,7 @@ const About = () => {
       {/* Footer */}
       <div className="w-screen h-[50px] fixed bottom-0 z-[999999]">
         <div
-          className="text-xl text-[#f9cdad] hover:text-[#fe4365] cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px]"
+          className="text-3xl text-[#f9cdad] hover:text-[#fe4365] cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px] "
           onClick={toggleEmail}
         >
           @ Click Here
