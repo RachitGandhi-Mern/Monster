@@ -68,6 +68,82 @@
 
 
 //! Here I Used Lenis Which is Perfect
+// import React, { useEffect, useRef } from "react";
+// import { gsap } from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
+// import Lenis from "@studio-freight/lenis";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const SmoothScroll = ({ children }) => {
+//   const scrollRef = useRef(null);
+//   const lenisRef = useRef(null);
+
+//   useEffect(() => {
+//     // Initialize Lenis
+//     const lenis = new Lenis({
+//       duration: 1.2, // Animation duration
+//       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing
+//       smoothWheel: true,
+//       smoothTouch: false, // Disable on touch devices
+//       wheelMultiplier: 1,
+//       touchMultiplier: 2,
+//       infinite: false,
+//     });
+
+//     lenisRef.current = lenis;
+
+//     // Connect Lenis with GSAP ScrollTrigger
+//     lenis.on('scroll', ScrollTrigger.update);
+
+//     // GSAP ScrollTrigger proxy for Lenis
+//     ScrollTrigger.scrollerProxy(document.body, {
+//       scrollTop(value) {
+//         return arguments.length 
+//           ? lenis.scrollTo(value, { immediate: true })
+//           : lenis.animatedScroll;
+//       },
+//       getBoundingClientRect() {
+//         return {
+//           top: 0,
+//           left: 0,
+//           width: window.innerWidth,
+//           height: window.innerHeight,
+//         };
+//       },
+//       pinType: document.body.style.transform ? "transform" : "fixed",
+//     });
+
+//     // Update ScrollTrigger when Lenis updates
+//     ScrollTrigger.addEventListener("refresh", () => lenis.resize());
+
+//     // Animation frame loop for Lenis
+//     function raf(time) {
+//       lenis.raf(time);
+//       requestAnimationFrame(raf);
+//     }
+//     requestAnimationFrame(raf);
+
+//     // Refresh ScrollTrigger
+//     ScrollTrigger.refresh();
+
+//     return () => {
+//       lenis.destroy();
+//       ScrollTrigger.removeEventListener("refresh", () => lenis.resize());
+//     };
+//   }, []);
+
+//   return (
+//     <div ref={scrollRef} className="smooth-wrapper">
+//       {children}
+//     </div>
+//   );
+// };
+
+// export default SmoothScroll;
+
+
+
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
