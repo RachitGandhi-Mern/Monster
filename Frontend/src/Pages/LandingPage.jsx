@@ -43,7 +43,10 @@ const LandingPage = () => {
     };
 
     followCursor();
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    return () => {window.removeEventListener('mousemove', handleMouseMove);
+       document.body.style.cursor = 'auto';
+    }
+    
   }, [isInside]);
 
   const handleVideoClick = () => {
