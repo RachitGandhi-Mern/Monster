@@ -1,132 +1,5 @@
-// import { useEffect, useRef } from "react";
 
-// const ImageSequence = () => {
-//   const canvasRef = useRef(null);
-//   const parentRef = useRef(null);
-
-//   useEffect(() => {
-//     const canvas = canvasRef.current;
-//     const context = canvas.getContext("2d");
-
-//     const frames = {
-//       currentIndex: 0,
-//       maxIndex: 369,
-//     };
-
-//     let imagesLoaded = 0;
-//     const images = [];
-
-//     function preloadImages() {
-//       for (let i = 1; i <= frames.maxIndex; i++) {
-//         const imageUrl = `/Frames/frame_${i.toString().padStart(4, "0")}.jpeg`;
-//         const img = new Image();
-//         img.src = imageUrl;
-//         img.onload = () => {
-//           imagesLoaded++;
-//           console.log(`Loaded image ${imagesLoaded}/${frames.maxIndex}`);
-//           if (imagesLoaded === frames.maxIndex) {
-//             console.log("All images loaded, starting animation");
-//             loadImage(frames.currentIndex);
-//             startAnimation();
-//           }
-//         };
-//         img.onerror = () => {
-//           console.error(`Failed to load image: ${imageUrl}`);
-//         };
-//         images.push(img);
-//       }
-//     }
-
-//     function loadImage(index) {
-//       if (index >= 0 && index < frames.maxIndex) {
-//         const img = images[index];
-//         if (img && img.complete) {
-//           canvas.width = window.innerWidth;
-//           canvas.height = window.innerHeight;
-
-//           const scaleX = canvas.width / img.width;
-//           const scaleY = canvas.height / img.height;
-//           const scale = Math.max(scaleX, scaleY);
-//           const newWidth = img.width * scale;
-//           const newHeight = img.height * scale;
-
-//           const offsetX = (canvas.width - newWidth) / 2;
-//           const offsetY = (canvas.height - newHeight) / 2;
-
-//           context.clearRect(0, 0, canvas.width, canvas.height);
-//           context.imageSmoothingQuality = "high";
-//           context.imageSmoothingEnabled = true;
-//           context.drawImage(img, offsetX, offsetY, newWidth, newHeight);
-//           frames.currentIndex = index;
-//         }
-//       }
-//     }
-
-//     function startAnimation() {
-//       let isScrolling = false;
-
-//       const handleScroll = () => {
-//         const scrollTop =
-//           window.pageYOffset || document.documentElement.scrollTop;
-//         const scrollHeight =
-//           document.documentElement.scrollHeight - window.innerHeight;
-//         const scrollPercent = scrollTop / scrollHeight;
-
-//         const targetIndex = Math.floor(scrollPercent * (frames.maxIndex - 1));
-
-//         if (!isScrolling) {
-//           isScrolling = true;
-//           requestAnimationFrame(() => {
-//             loadImage(targetIndex);
-//             isScrolling = false;
-//           });
-//         }
-//       };
-
-//       window.addEventListener("scroll", handleScroll);
-
-//       return () => {
-//         window.removeEventListener("scroll", handleScroll);
-//       };
-//     }
-
-//     // Resize handler
-//     const handleResize = () => {
-//       if (images.length > 0) {
-//         loadImage(frames.currentIndex);
-//       }
-//     };
-
-//     window.addEventListener("resize", handleResize);
-//     preloadImages();
-
-//     return () => {
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="w-full bg-black">
-//       <div
-//         ref={parentRef}
-//         className="parent h-full"
-//       />
-//       <div className="w-full sticky top-0 left-0 h-screen">
-//         <canvas ref={canvasRef} className="w-full h-screen" id="frame" />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ImageSequence;
-
-
-
-
-
-
-
-
+//! Perfectly Fine Code There are Some Issues With SmoothScroll
 // import { useEffect, useRef } from "react";
 
 // const ImageSequence = () => {
@@ -323,8 +196,17 @@
 
 
 
-import React, { useEffect, useRef } from 'react';
 
+
+
+
+
+
+
+
+//! Current Working Code Perfect Code
+
+import React, { useEffect, useRef } from 'react';
 const ImageSequence = () => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);

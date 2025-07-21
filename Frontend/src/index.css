@@ -8,6 +8,11 @@
 
 
 
+html, body {
+  overflow: hidden;
+}
+
+
 @font-face {
   font-family: 'JoganSoft';
   src: url('./assets/Font//JoganSoft-Regular.ttf') format('truetype');

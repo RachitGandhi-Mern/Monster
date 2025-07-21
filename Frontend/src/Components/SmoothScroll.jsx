@@ -1,4 +1,6 @@
-// // SmoothScroll.jsx
+
+
+//! Smooth Scrolling With Locomotive Scroll but it is Giving Issue with Scroll trigger Pages
 // import React, { useEffect, useRef } from "react";
 // import { gsap } from "gsap";
 // import ScrollTrigger from "gsap/ScrollTrigger";
@@ -22,7 +24,7 @@
 //   ScrollTrigger.scrollerProxy(scrollRef.current, {
 //     scrollTop(value) {
 //       return arguments.length
-//         ? locoScroll.scrollTo(value, 0, 0)
+        // ? locoScroll.scrollTo(value, 0, 0)
 //         : locoScroll.scroll.instance.scroll.y;
 //     },
 //     getBoundingClientRect() {
@@ -61,7 +63,11 @@
 
 
 
-// SmoothScroll.jsx
+
+
+
+
+//! Here I Used Lenis Which is Perfect
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";

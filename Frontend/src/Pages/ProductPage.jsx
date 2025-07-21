@@ -1,4 +1,4 @@
-// // ✅ ProductPage.jsx
+//! Code With without Liquid Button
 // import React, { useEffect, useRef, useState } from "react";
 // import { useParams } from "react-router-dom";
 // import gsap from "gsap";
@@ -113,7 +113,6 @@
 //             Add to Cart
 //           </motion.button>
 //            </div>
-//            <LiquidButton/>
 //       </div>
 //     </motion.div>
 //   );
@@ -123,6 +122,13 @@
 
 
 
+
+
+
+
+
+
+//! Code With Liquid And diff UI/STYLING
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import gsap from "gsap";
@@ -245,3 +251,6 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
+
+
+

@@ -1,3 +1,6 @@
+
+
+//! Original Code With Perfect/Correct Logics But There Is NO UI/STYLING In this 
 // import React, { useState } from 'react';
 // import { login } from '../api/auth';
 // import { useNavigate } from 'react-router-dom';
@@ -31,6 +34,14 @@
 
 
 
+
+
+
+
+
+
+
+//! Current Code With Styling/UI
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { login } from "../api/auth"; // 👈 Make sure this API exists

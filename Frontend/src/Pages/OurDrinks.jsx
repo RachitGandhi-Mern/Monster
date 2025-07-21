@@ -1,3 +1,7 @@
+
+
+//! Current Code Which IS Responsive Also 
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HC1 from "../assets/Images/HC1.png";

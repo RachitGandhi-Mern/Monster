@@ -316,7 +316,8 @@ const FlameInteractiveTrail = () => {
         style={{
           backgroundImage: 'url("https://assets.codepen.io/7558/noise-002.png")',
           backgroundRepeat: 'repeat',
-          backgroundSize: '200px 200px'
+          backgroundSize: '200px 200px',
+          backgroundColor: 'radial-gradient(ellipse at 60% 40%, #242424 0%, #181818 60%, #000 100%)'
         }}
       />
 
@@ -360,3 +361,9 @@ const FlameInteractiveTrail = () => {
 };
 
 export default FlameInteractiveTrail;
+
+
+
+
+
+

@@ -1,75 +1,3 @@
-// import React from 'react';
-
-// const Footer = () => {
-//   return (
-//     <footer className="w-full  bg-black text-white font-[helvatica] p-10 uppercase">
-//       <div className="flex flex-col lg:flex-row justify-between gap-10">
-
-//         {/* Links Section */}
-//         <div className="flex gap-14 flex-wrap">
-//           {/* Help */}
-//           <div className="flex flex-col">
-//             <h2 className="pb-4 font-semibold text-lg">Help</h2>
-//             <ul className="space-y-2 text-sm">
-//               <li>FAQs</li>
-//               <li>Returns</li>
-//               <li>Contact Us</li>
-//             </ul>
-//           </div>
-
-//           {/* Explore */}
-//           <div className="flex flex-col">
-//             <h2 className="pb-4 font-semibold text-lg">Explore</h2>
-//             <ul className="space-y-2 text-sm">
-//               <li>Beer</li>
-//               <li>Collections</li>
-//               <li>Gift Cards</li>
-//             </ul>
-//           </div>
-
-//           {/* Socials */}
-//           <div className="flex flex-col">
-//             <h2 className="pb-4 font-semibold text-lg">Socials</h2>
-//             <ul className="space-y-2 text-sm">
-//               <li>Instagram</li>
-//               <li>Facebook</li>
-//               <li>Twitter</li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         {/* Newsletter Section */}
-//         <div className="flex flex-col gap-4 max-w-sm">
-//           <h2 className="text-lg font-semibold">Get up to 25% off</h2>
-//           <p className="text-sm text-gray-300">Subscribe to our newsletter</p>
-//           <div className="flex items-center border border-white rounded overflow-hidden">
-//             <input
-//               type="email"
-//               placeholder="Enter your email address"
-//               className="bg-black text-white px-4 py-2 flex-1 placeholder:text-gray-400 focus:outline-none font-[]"
-//             />
-//             <button className="bg-white text-black px-4 py-2 uppercase text-sm hover:bg-gray-200 transition-all">
-//               Subscribe
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Bottom Disclaimer or Copyright */}
-//       <div className="pt-30 text-center text-xs text-gray-400">
-//         <h1 className=' stroke-text text-[16rem] font-[monster-energy]'>Monster</h1>
-
-//         <div className='flex justify-between'>
-//           <div>© {new Date().getFullYear()} <span className='text-[#95D600]'>Created By Rachit Gandhi</span></div>
-//           <div>25% off</div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
 import React, { useEffect, useRef, useState } from "react";
 import NewsletterForm from "../Components/NewsletterForm";
 
@@ -710,3 +638,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+

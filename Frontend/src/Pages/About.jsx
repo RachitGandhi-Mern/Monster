@@ -1,3 +1,6 @@
+//! In This There Is no Styling and Text In side bar 
+
+
 // import React, { useEffect, useRef, useState } from 'react';
 // import Navbar from '../Components/Navbar';
 
@@ -88,9 +91,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// ! Current Code With Side Bar Styles 
+
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../Components/Navbar';
-import GooglyEyes from '../Components/GooglyEyes'; // 👈 Import it here
+import GooglyEyes from '../Components/GooglyEyes'; 
 import { NavLink } from 'react-router-dom';
 
 const About = () => {
@@ -155,7 +171,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Email Modal */}
+      {/* Email*/}
       <div
         className={`transition-all duration-[850ms] font-[JoganSoft] ease-out overflow-hidden min-h-[300px] w-[50vw] h-[50vh] bg-[#f9cdad] rounded-[10px] absolute top-[20%] left-[-200px] flex flex-col opacity-0 ${
           isVisible ? 'translate-x-[20%] opacity-100' : '-translate-x-[200%]'
@@ -197,6 +213,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
