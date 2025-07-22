@@ -265,7 +265,7 @@ const ImageSequence = () => {
         function getImagePath(index) {
           const frameNumber = String(index + 1).padStart(4, '0');
           const path = `/Frames/frame_${frameNumber}.jpeg`;
-          console.log('Trying to load:', path);
+          // console.log('Trying to load:', path);
           return path;
         }
 
