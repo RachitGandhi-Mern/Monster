@@ -113,3 +113,23 @@ body {
   z-index: 20;
 }
 
+
+
+
+
+/* ✅ Optional Media Query for Small Devices */
+@media screen and (max-width: 600px) {
+  .loading {
+    font-size: 18vw;
+    top: 40%;
+  }
+
+  .counter {
+    font-size: 12vw;
+    right: 5%;
+  }
+
+  .loading-2-text {
+    width: 80%;
+  }
+}

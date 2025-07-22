@@ -107,8 +107,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/ProfileCard" className="hover:text-white text-black transition duration-200 hover:border-white">
             Me
-          </NavLink>
-             
+          </NavLink>   
         </motion.div>
       )}
     </motion.div>
