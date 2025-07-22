@@ -247,7 +247,7 @@ const Hoverbar = () => {
   ];
 
   return (
-    <div id="page4" className="min-h-screen bg-[#FFF8F0] w-full px-[2vw] py-[5vh] relative overflow-hidden">
+    <div id="page4" className="min-h-screen bg-[#f6ece1] w-full px-[2vw] py-[5vh] relative overflow-hidden">
 
       {/* Header */}
       <div className="relative page1-text bg-[url('https://images.unsplash.com/photo-1594905666013-8f11171b8d6d?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat min-h-[10vh] w-full">

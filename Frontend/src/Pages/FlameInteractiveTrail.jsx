@@ -309,7 +309,7 @@ const FlameInteractiveTrail = () => {
   }, [createTrailImage]);
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden bg-black bg-gradient-to-br from-[#111111] via-[#161515] to-[#333232]">
       {/* Noise overlay */}
       <div 
         className="fixed inset-0 opacity-5 pointer-events-none z-50 mix-blend-screen"
@@ -317,7 +317,7 @@ const FlameInteractiveTrail = () => {
           backgroundImage: 'url("https://assets.codepen.io/7558/noise-002.png")',
           backgroundRepeat: 'repeat',
           backgroundSize: '200px 200px',
-          backgroundColor: 'radial-gradient(ellipse at 60% 40%, #242424 0%, #181818 60%, #000 100%)'
+          // backgroundColor: 'radial-gradient(ellipse at 60% 40%, #242424 0%, #181818 60%, #000 100%)'
         }}
       />
 
@@ -325,7 +325,7 @@ const FlameInteractiveTrail = () => {
       {/* Hero Section */}
       <section 
         ref={containerRef}
-        className="relative w-full h-screen flex justify-center items-center overflow-hidden bg-gradient-to-br from-black-900 via-gray-800 to-black-900"
+        className="relative w-full h-screen flex justify-center items-center overflow-hidden "
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}

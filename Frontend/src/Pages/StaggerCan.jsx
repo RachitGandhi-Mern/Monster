@@ -85,17 +85,19 @@ const StaggerCan = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-screen h-screen flex flex-col items-center justify-end text-black font-[monster-energy] font-bold text-center overflow-hidden"
+      className="relative w-screen h-screen flex flex-col items-center justify-end text-black font-[monster-energy] font-bold text-center overflow-hidden bg-gradient-to-br from-[#111111] via-[#161515] to-[#333232] overflow-x-hidden"
       style={{
         // bg-[linear-gradient(180deg,#ffffff_0%,#a6cbed_30%,#f68d2a_50%,#000000_80%)]
         // background: "linear-gradient(180deg,#FFF8F0 0%,rgba(149, 214, 0, 1) 60%,rgba(0, 0, 0, 0.9) 75%,#000 90%)" 
         // background: "linear-gradient(180deg, #a6cbed -3.4%, #f68d2a 109.5%)" 
-        background: "linear-gradient(180deg, #ffffff 0%, #f68d2a 50%, #000000 90%)" 
+        // background: "linear-gradient(180deg, #ffffff 0%, #f68d2a 50%, #000000 90%)" 
+        
+        // bg-[radial-gradient(circle_at_20%_50%,#ff3366_0%,transparent_40%),radial-gradient(circle_at_50%_50%,#000000_0%,transparent_60%),radial-gradient(circle_at_80%_50%,#3366ff_0%,transparent_40%)]
       }}
     >
       {/* Heading */}
       <div className="absolute top-20 text-center w-full z-10">
-        <h1 className="monster-text text-4xl md:text-6xl lg:text-9xl uppercase font-extrabold tracking-tight">
+        <h1 className="monster-text text-4xl md:text-6xl lg:text-9xl uppercase text-[#FFFFF0] font-extrabold tracking-tight">
           Unleash the <span className="text-[#95D600] "> Beast!</span>
         </h1>
         <p className="text-xl  font-bolder  text-white  selection:text-black selection:bg-white ">Ignite the rush within. Fuel your fire. Power every moment.

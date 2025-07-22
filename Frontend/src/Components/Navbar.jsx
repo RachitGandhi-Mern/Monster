@@ -91,7 +91,7 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="flex gap-4 md:gap-6 text-md md:text-lg font-medium font-[monster-energy] uppercase"
+          className="flex gap-4 md:gap-6 text-md md:text-lg font-medium font-[JoganSoft] uppercase"
         >
           <NavLink to="/" className="hover:text-white text-black transition duration-200 hover:border-white">
             Home
@@ -105,6 +105,10 @@ const Navbar = () => {
           <NavLink to="/signup" className="hover:text-white text-black transition duration-200 hover:border-white">
             Signup
           </NavLink>
+          <NavLink to="/ProfileCard" className="hover:text-white text-black transition duration-200 hover:border-white">
+            Me
+          </NavLink>
+             
         </motion.div>
       )}
     </motion.div>

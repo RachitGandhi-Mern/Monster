@@ -100,7 +100,7 @@ const Loading = ({ onLoadingComplete }) => {
         type="text/css"
       />
       <div className="loading wave">Monster</div>
-      <h1 ref={counterRef} className="counter">
+      <h1 ref={counterRef} className="counter font-[JoganSoft]">
         0
       </h1>
     </div>

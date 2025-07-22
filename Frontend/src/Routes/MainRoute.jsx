@@ -6,6 +6,7 @@ import Dashboard from "../Pages/Signup"
 import Home from '../Pages/Home'
 import About from '../Pages/About'
 import ProductPage from '../Pages/ProductPage'
+import ProfileCard from '../Pages/ProfileCard'
 
 const MainRoute = () => {
   return (
@@ -17,6 +18,7 @@ const MainRoute = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/product/:id" element={<ProductPage />} />
+      <Route path="ProfileCard" element={<ProfileCard />} />
     </Routes>
     </div>
   )

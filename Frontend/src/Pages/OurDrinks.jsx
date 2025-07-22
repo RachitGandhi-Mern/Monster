@@ -16,6 +16,7 @@ import BG3 from "../assets/Images/HoverCan3.png";
 import BG4 from "../assets/Images/HoverCan4.png";
 import BG5 from "../assets/Images/HoverCan5.png";
 import BG6 from "../assets/Images/HoverCan6.png";
+import AnimatedButton from "../Components/Ui/AnimatedButton";
 
 const drinks = [
   {
@@ -84,7 +85,7 @@ const OurDrinks = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="bg-[#FFF8F0] px-6 md:px-12 py-16">
+    <div className="bg-[#f6ece1] px-6 md:px-12 py-16">
       <div className="max-w-[1440px] mx-auto border border-black rounded-2xl overflow-hidden">
         <h2 className="text-[48px] font-bold px-4 py-6 text-center font-[JoganSoft] border-b border-black">
           Our Drinks
@@ -126,7 +127,6 @@ const OurDrinks = () => {
                 >
                   {item.title}
                 </span>
-
                 <Link to={`/product/${item.id}`} className="relative group">
                   <button className="px-6 py-2 text-white text-sm font-semibold rounded-full overflow-hidden hover:text-[#95D600] bg-black z-10">
                     <span className="relative z-20 flex items-center gap-2 transition-all duration-300 group-hover:gap-3 font-[JoganSoft]">

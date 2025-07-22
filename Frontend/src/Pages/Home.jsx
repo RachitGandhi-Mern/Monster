@@ -12,6 +12,7 @@ import HoverImages from './HoverImages';
 import Footer from './Footer';
 import SmoothScroll from '../Components/SmoothScroll';
 import QuoteSection from './QuoteSection';
+import MonsterGallery from './MonsterGallery';
 
 
 const Home = () => (
@@ -22,6 +23,7 @@ const Home = () => (
     <OurDrinks/>
     <QuoteSection/>
     <Hoverbar />
+    <MonsterGallery/>
     <FlameInteractiveTrail/>
     <StaggerCan/>
     <ImageSequence />

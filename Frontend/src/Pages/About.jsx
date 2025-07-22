@@ -164,7 +164,7 @@ const About = () => {
       {/* Footer */}
       <div className="w-screen h-[50px] fixed bottom-0 z-[999999]">
         <div
-          className="text-3xl text-[#f9cdad] hover:text-[#fe4365] cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px] "
+          className="text-3xl text-[#fe4365] hover:text-[#f9cdad]  cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px] "
           onClick={toggleEmail}
         >
           @ Click Here
@@ -183,7 +183,7 @@ const About = () => {
         >
           x
         </div>
-        <a href='https://www.monsterenergy.com' className="bg-[#c8c8a9] flex items-center relative w-[calc(100%-150px)] ml-[80px] mt-[15px] h-[25px] p-[10px] rounded-[5px] hover:bg-[#83af9b] cursor-pointer">
+        <a href='https://www.monsterenergy.com' target='blank' className="bg-[#c8c8a9] flex items-center relative w-[calc(100%-150px)] ml-[80px] mt-[15px] h-[25px] p-[10px] rounded-[5px] hover:bg-[#83af9b] cursor-pointer">
           https://www.monsterenergy.com
         </a>
        <div className="bg-[#c8c8a9] relative w-[calc(100%-150px)] ml-[80px] mt-[40px] h-[220px] p-[24px] rounded-[16px] hover:bg-[#83af9b] transition-all duration-500 ease-in-out cursor-pointer shadow-lg flex flex-col justify-between group">

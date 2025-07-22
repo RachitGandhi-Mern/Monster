@@ -5,7 +5,7 @@ const textBlocks = [
 "Some unleash their energy in different ways.",
 "But one way the real ones show who they are..." ,
 "is by creating something raw, wild, and powerful",
-"And putting it out into the world  no filters." ,
+"And putting it out into the world no filters." ,
 "You might never meet the people who vibe with it",
 "No handshakes. No small talk." ,
 "Just pure adrenaline, pure energy " ,
@@ -18,7 +18,7 @@ const textBlocks = [
 "A pulse. A roar. A reminder — ",
 "to stay true to your grind, ",
 "and never forget what fuels you. ",
-<span className="text-[#95D600] font-[monster-energy] text-8xl">" Monster <span className="text-white">Energy</span> "</span> ,
+<span className="text-[#95D600] font-[monster-energy] text4xl">" Monster <span className="text-white">Energy</span> "</span> ,
 <span className="text-orange-500">" Unleash the Beast. ⚡️"</span>,
 ];
 
@@ -68,7 +68,7 @@ const QuoteSection = () => {
   }, []);
 
   return (
-    <div className="w-full py-[21vw] text-white font-[helaticav] text-center">
+    <div className="w-full py-[21vw] text-[#FFFFF0] font-[helaticav] text-center overflow-x-hidden">
       {textBlocks.map((text, index) =>
         text === "" ? (
           <br key={index} />
