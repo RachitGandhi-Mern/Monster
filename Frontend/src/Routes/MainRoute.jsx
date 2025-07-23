@@ -4,9 +4,11 @@ import Signup from "../Pages/Signup"
 import Login from "../Pages/Login"
 import Dashboard from "../Pages/Signup"
 import Home from '../Pages/Home'
-import About from '../Pages/About'
 import ProductPage from '../Pages/ProductPage'
 import ProfileCard from '../Pages/ProfileCard'
+import Contact from '../Pages/Contact'
+import About from '../Pages/About'
+
 
 const MainRoute = () => {
   return (
@@ -19,6 +21,7 @@ const MainRoute = () => {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/product/:id" element={<ProductPage />} />
       <Route path="ProfileCard" element={<ProfileCard />} />
+      <Route path="/Contact" element={<Contact />} />
     </Routes>
     </div>
   )

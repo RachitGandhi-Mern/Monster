@@ -99,6 +99,9 @@ const Navbar = () => {
           <NavLink to="/about" className="hover:text-white text-black transition duration-200 hover:border-white">
             About
           </NavLink>
+          <NavLink to="/Contact" className="hover:text-white text-black transition duration-200 hover:border-white">
+            Contact
+          </NavLink> 
           <NavLink to="/login" className="hover:text-white text-black transition duration-200 hover:border-white">
             Login
           </NavLink>
@@ -107,7 +110,8 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/ProfileCard" className="hover:text-white text-black transition duration-200 hover:border-white">
             Me
-          </NavLink>   
+          </NavLink>  
+           
         </motion.div>
       )}
     </motion.div>
