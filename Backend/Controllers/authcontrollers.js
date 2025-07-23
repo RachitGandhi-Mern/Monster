@@ -14,7 +14,7 @@ exports.signup = async (req , res) =>{
 
         
     } catch (error) {
-      res.status(500).json({ error: err.message });
+      res.status(500).json({ error: error.message });
     }
 }
 
@@ -31,7 +31,7 @@ exports.login=  async(req , res)=>{
     res.cookie("token", token, { httpOnly: true }).json({ msg: "Login successful" });
 
   } catch (error) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: error.message });
   }
 }
 
