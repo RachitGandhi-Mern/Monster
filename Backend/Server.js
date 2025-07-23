@@ -10,7 +10,7 @@ const authRoute = require("./Routes/authRoutes");
 
 app.use(express.json());
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: [ "http://localhost:5173", process.env.FRONTEND_URL ], credentials: true }));
 app.use(cookieparse());
 app.use("/api/auth", authRoute);
 
