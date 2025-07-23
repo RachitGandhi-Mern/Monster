@@ -308,7 +308,7 @@ const ImageSequence = () => {
               
               img.onload = function() {
                 loadedCount++;
-                console.log(`Loaded: ${loadedCount}/${frameCount}`);
+                // console.log(`Loaded: ${loadedCount}/${frameCount}`);
                 
                 if (loadedCount === 1) {
                   // Render first image
@@ -317,7 +317,7 @@ const ImageSequence = () => {
                 }
                 
                 if (loadedCount + errorCount === frameCount) {
-                  console.log('All images processed!');
+                  // console.log('All images processed!');
                   resolve();
                 }
               };
@@ -337,11 +337,11 @@ const ImageSequence = () => {
         }
 
         // Start loading images
-        console.log('Starting image load...');
+        // console.log('Starting image load...');
         await loadImages();
         
         // Setup GSAP animation
-        console.log('Setting up GSAP...');
+        // console.log('Setting up GSAP...');
         
         window.gsap.to(imageSeq, {
           frame: frameCount - 1,

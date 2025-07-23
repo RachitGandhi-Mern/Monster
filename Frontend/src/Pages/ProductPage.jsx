@@ -122,12 +122,6 @@
 
 
 
-
-
-
-
-
-
 //! Code With Liquid And diff UI/STYLING
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -257,6 +251,5 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
-
 
 

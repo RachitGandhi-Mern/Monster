@@ -147,7 +147,7 @@ const Contact = () => {
         <GooglyEyes />
       </div>
 
-      <h1 className="pl-30 p-10 text-7xl font-[JoganSoft]">About US</h1>
+      <h1 className="pl-30 p-10 text-7xl font-[JoganSoft]">Contact Us</h1>
 
       <svg
         viewBox="0 0 425 300"
