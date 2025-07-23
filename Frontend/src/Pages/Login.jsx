@@ -44,7 +44,8 @@
 //! Current Code With Styling/UI
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { login } from "../api/auth"; // 👈 Make sure this API exists
+import { login } from "../api/auth"; 
+import { logout } from "../api/auth"; //
 import Navbar from "../Components/Navbar";
 
 const Login = () => {
@@ -59,10 +60,22 @@ const Login = () => {
     e.preventDefault();
     try {
       await login(form); // 👈 call API
+      localStorage.setItem("isLoggedIn", "true");
       alert("Login successful");
-      navigate("/dashboard"); // 👈 redirect after success
+      navigate("/"); // 👈 redirect after success
     } catch (err) {
       alert(err.response?.data?.msg || "Login error");
+    }
+  };
+  const handleLogout = async () => {
+    try {
+      await logout(); // calls backend to clear the cookie
+      localStorage.removeItem("isLoggedIn"); // clear frontend session
+      alert("Logged out successfully");
+      navigate("/login"); // redirect to login
+    } catch (error) {
+      alert("Logout failed");
+      console.log(error.message)
     }
   };
 
@@ -109,14 +122,22 @@ const Login = () => {
           />
         </div>
 
-        <button
+        <div className="flex gap-2">
+          <button
           type="submit"
           className="w-full py-3 bg-[#FF5E5B] text-white border-2 border-black font-bold text-base mt-2 transition-all hover:shadow-[4px_4px_0px_#000] hover:-translate-x-[2px] hover:-translate-y-[2px]"
         >
           SIGN IN
         </button>
 
-        
+        <button
+          type="submit"
+          onClick={handleLogout}
+          className="w-full py-3 bg-[#FF5E5B] text-white border-2 border-black font-bold text-base mt-2 transition-all hover:shadow-[4px_4px_0px_#000] hover:-translate-x-[2px] hover:-translate-y-[2px]"
+        >
+         Logout
+        </button>
+        </div>
 
         <div className="text-center mt-6 text-black">
           Don't have an account?{" "}

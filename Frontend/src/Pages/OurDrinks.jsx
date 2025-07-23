@@ -3,7 +3,6 @@
 //! Current Code Which IS Responsive Also 
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import HC1 from "../assets/Images/HC1.png";
 import HC2 from "../assets/Images/HC2.png";
 import HC3 from "../assets/Images/HC3.png";
@@ -17,6 +16,7 @@ import BG4 from "../assets/Images/HoverCan4.png";
 import BG5 from "../assets/Images/HoverCan5.png";
 import BG6 from "../assets/Images/HoverCan6.png";
 import AnimatedButton from "../Components/Ui/AnimatedButton";
+import { useNavigate } from "react-router-dom";
 
 const drinks = [
   {
@@ -81,8 +81,23 @@ const drinks = [
   }
 ];
 
+
+
+
 const OurDrinks = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const navigate = useNavigate();
+
+const handleShopClick = (productId) => {
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+  if (!isLoggedIn) {
+    alert("Please log in to continue");
+    navigate("/login");
+  } else {
+    navigate(`/product/${productId}`);
+  }
+};
 
   return (
     <div className="bg-[#f6ece1] px-6 md:px-12 py-16">
@@ -127,14 +142,14 @@ const OurDrinks = () => {
                 >
                   {item.title}
                 </span>
-                <Link to={`/product/${item.id}`} className="relative group">
+                <button  onClick={() => handleShopClick(item.id)} className="relative group">
                   <button className="px-6 py-2 text-white text-sm font-semibold rounded-full overflow-hidden hover:text-[#95D600] bg-black z-10">
                     <span className="relative z-20 flex items-center gap-2 transition-all duration-300 group-hover:gap-3 font-[JoganSoft]">
                       SHOP NOW <span className="text-xl">→</span>
                     </span>
                     <span className="absolute inset-0 rounded-full animate-glow-border before:content-[''] before:absolute before:inset-[-2px] before:rounded-full before:bg-[conic-gradient(from_0deg,transparent,grey,transparent)] before:animate-spin-slow before:opacity-30 z-10"></span>
                   </button>
-                </Link>
+                </button>
               </div>
             </div>
           ))}

@@ -140,6 +140,7 @@ import HC4 from "../assets/Images/HC4.png";
 import HC5 from "../assets/Images/HC5.png";
 import HC6 from "../assets/Images/HC6.png";
 import LiquidButton from "../Components/Ui/LiquidButton";
+import Navbar from "../Components/Navbar";
 
 const drinks = {
   "energy-ultra": {
@@ -214,12 +215,14 @@ const ProductPage = () => {
   if (!product) return <div className="p-10">Product not found.</div>;
 
   return (
+    
     <motion.div
       className="min-h-screen bg-[#FFF8F0] px-6 md:px-20 py-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
+      <Navbar/>
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
           <img
