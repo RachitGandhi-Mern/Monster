@@ -166,7 +166,7 @@ const Contact = () => {
       {/* Footer */}
       <div className="w-screen h-[50px] fixed bottom-0 z-[999999]">
         <div
-          className="text-3xl text-[#fe4365] hover:text-[#f9cdad]  cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px] "
+          className="text-4xl text-[#fe4365] hover:text-[#f9cdad]  cursor-pointer float-right mr-[8%] mt-[2.5px] w-auto h-[25px] text-center leading-[18px] uppercase font-[JoganSoft]"
           onClick={toggleEmail}
         >
           @ Click Here
